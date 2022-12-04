@@ -1,0 +1,50 @@
+zen_txt = """The Zen of Python, by Tim Peters
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!"""
+
+
+def capitalize_keep_only_en_chars(word):
+    # βοηθητική συνάρτηση που επιστρέφει μόνο αγγλικούς κεφαλαίους χαρακτήρες
+    # της συμβολοσειράς εισόδου word
+    pass
+
+
+def tokenize(txt):
+    # συνάρτηση που "σπάει" το κείμενο txt σε λέξεις απορρίπτοντας
+    # χαρακτήρες που δεν είναι γράμματα του αγγλικού αλφαβήτου,
+    # επιστρέφει λίστα με λέξεις με κεφαλαία γράμματα
+    pass
+
+
+def char_frequencies(word_list):
+    # συνάρτηση που επιστρέφει ένα λεξικό με το πλήθος εμφάνισης
+    # κάθε χαρακτήρα στη λίστα συμβολοσειρών word_list
+    pass
+
+
+def word_frequencies(word_list):
+    # συνάρτηση που επιστρέφει λεξικό με το πλήθος εμφάνισης κάθε λέξης
+    # στη λίστα συμβολοσειρών word_list
+    pass
+
+
+### Κυρίως πρόγραμμα ###
+
+words = tokenize(zen_txt)
