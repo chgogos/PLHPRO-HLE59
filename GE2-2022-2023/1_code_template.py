@@ -1,9 +1,5 @@
 def dec_to_bin(num):
-    num = int(num)
-    while num > 0:
-        print(num)
-        num = num // 2
-
+    pass
 
 def bin_to_dec(num):
     pass
@@ -25,8 +21,7 @@ if __name__ == "__main__":
         if choice == "":
             break
         if choice == "1":
-            x = input("Δώσε αριθμό σε δεκαδική μορφή")
-            dec_to_bin(x)
+            pass
         elif choice == "2":
             pass
         elif choice == "3":
