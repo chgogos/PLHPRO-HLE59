@@ -6,7 +6,8 @@
 class Component:
     def __init__(self,name):
         # Αρχικοποίηση ονόματος, κατάστασης και δομής αποθήκευσης συνδεδεμένων εξαρτημάτων
-        pass
+        self.name = name
+
     
     def connect(self, other):
         # Προσθήκη εξαρτήματος στη δομή αποθήκευσης συνδεδεμένων εξαρτημάτων
@@ -26,11 +27,11 @@ class Component:
 
 class Ignition(Component):  
     def __init__(self):
-        pass
+        super().__init__("Μίζα")
 
 class Battery(Component):
     def __init__(self):
-        pass
+        super().__init__("Μπαταρία")
 
 class FuelPump(Component):  
     def __init__(self):
@@ -43,20 +44,19 @@ class Engine(Component):
 class Car:
     def __init__(self):
         # Δημιουργία των εξαρτημάτων του αυτοκινήτου
-        pass
+        self.ignition = Ignition()
+
 
         # Σύνδεση των εξαρτημάτων μεταξύ τους
-        pass
+        self.ignition.connect(self.battery)
 
     def status(self):
         print('=========================')
         self.ignition.status()
         print('=========================')
 
-if __name__=="__main__":
-    car = Car()
-    car.status()
-    car.ignition.start()
-    car.status()
-    car.ignition.stop()
-    car.status()
+
+ign = Ignition()
+print(ign.name)
+bat = Battery()
+print(bat.name)

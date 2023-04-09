@@ -1,0 +1,3 @@
+France:Paris
+Germany:Berlin
+Italy:Amsterdam
